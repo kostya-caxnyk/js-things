@@ -1,0 +1,184 @@
+body {
+    height: 300vh;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(180, 179, 179);
+    font-size: 20px;
+    padding-left: 50px;
+}
+
+
+/* slider bar */
+.slider {
+    border-radius: 5px;
+    background: #E0E0E0;
+    background: linear-gradient(left top, #E0E0E0, #EEEEEE);
+    width: 310px;
+    height: 15px;
+    margin: 5px;
+    margin-bottom: 70px;
+}
+
+.thumb {
+    width: 10px;
+    height: 25px;
+    border-radius: 3px;
+    position: relative;
+    left: 10px;
+    top: -5px;
+    background: blue;
+    cursor: pointer;
+}
+
+
+/* clock */
+.clock {
+    font-size: 30px;
+    position: absolute;
+    right: 50%;
+    top: 0;
+}
+
+#hours {
+    color: red;
+}
+
+#minutes {
+    color: green;
+}
+
+#seconds {
+    color: rgb(39, 196, 235);
+}
+
+
+/* moving ball */
+#field {
+    width: 200px;
+    height: 150px;
+    border: 10px solid black;
+    background-color: #00FF00;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 70px;
+}
+
+#ball {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 1s all;
+}
+
+/* slider */
+.carousel {
+    position: relative;
+    width: 398px;
+    padding: 10px 40px;
+    border: 1px solid #CCC;
+    border-radius: 15px;
+    background: #eee;
+    margin-bottom: 70px;
+}
+
+.carousel img {
+    width: 130px;
+    height: 130px;
+    display: block;
+}
+
+.arrow {
+    position: absolute;
+    top: 60px;
+    padding: 0;
+    background: #ddd;
+    border-radius: 15px;
+    border: 1px solid gray;
+    font-size: 24px;
+    line-height: 24px;
+    color: #444;
+    display: block;
+}
+
+.arrow:focus {
+    outline: none;
+}
+
+.arrow:hover {
+    background: #ccc;
+    cursor: pointer;
+}
+
+.prev {
+    left: 7px;
+}
+
+.next {
+    right: 7px;
+}
+
+.gallery {
+    width: 390px;
+    overflow: hidden;
+}
+
+.gallery ul {
+    height: 130px;
+    width: 9999px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: margin-left 250ms;
+    font-size: 0;
+}
+
+.gallery li {
+    display: inline-block;
+}
+
+/* field with heroes */
+
+#field2 {
+    background: url(https://js.cx/drag-heroes/field.png);
+    width: 800px;
+    height: 600px;
+    float: left;
+    margin-bottom: 70px;
+}
+
+
+.hero {
+    background: url(https://js.cx/drag-heroes/heroes.png);
+    width: 130px;
+    height: 128px;
+    float: left;
+}
+
+#hero1 {
+    background-position: 0 0;
+}
+
+#hero2 {
+    background-position: 0 -128px;
+}
+
+#hero3 {
+    background-position: -120px 0;
+}
+
+#hero4 {
+    background-position: -125px -128px;
+}
+
+#hero5 {
+    background-position: -248px -128px;
+}
+
+#hero6 {
+    background-position: -244px 0;
+}
+
+.draggable {
+    cursor: pointer;
+}
